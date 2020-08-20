@@ -1,0 +1,63 @@
+function draw() {
+  
+  background(rgb(139,69,19));
+ tomatoSeed();
+ carrotSeed();
+ brinjalSeed();
+ onionSeed();
+ orangeSeed();
+ capsicumSeed();
+   
+  
+  
+  
+  drawSprites();
+}
+
+function tomatoSeed (){
+   
+  for (var t = 50; t < 400; t=t+50) {
+     var tomato = createSprite(t,60,20,20);
+     tomato.setAnimation("tomato");
+   }
+}
+
+function carrotSeed(){
+  
+  for (var c = 50; c < 400;c=c+50){
+     var carrot = createSprite(c,120,20,20);
+     carrot.setAnimation("carrot");
+   }
+}
+
+function brinjalSeed (){
+  
+  for (var b = 50; b<400; b=b+50) {
+     var brinjal = createSprite(b,180,20,20);
+     brinjal.setAnimation("brinjal");
+   }
+}
+
+function onionSeed(){
+  
+   for (var o = 50; o < 400; o= o + 50) {
+     var onions  = createSprite(o,240,20,20);
+     onions.setAnimation("onion");
+   }
+}
+
+function orangeSeed(){
+
+  for (var r = 50; r<400; r=r+50) {
+     var orange = createSprite(r,300,20,20);
+     orange.setAnimation("orange");
+   }
+}
+
+function capsicumSeed (){
+
+  for (var a =50; a<400;a=a+50) {
+     var Capsicum = createSprite(a,360,20,20);
+     Capsicum.setAnimation("capcisum");
+   }
+}
